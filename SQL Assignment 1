@@ -1,0 +1,18 @@
+create database jan30
+use jan30
+create table customermaster(
+CUSTOMER_NUMBER VARCHAR(10) primary key,FIRSTNAME varchar(50) not null,
+middlename varchar(50),
+lastname varchar(50) not null ,
+CUSTOMER_CITY VARCHAR(50) not null,
+CUSTOMER_CONTACT_NO BIGINT not null,
+occupation varchar(50)not null,
+CUSTOMER_DATE_OF_BIRTH DATE NOT NULL)
+
+insert into customermaster values('C00002','AVINASH','SUNDER','MINHA','DELHI',987653109,'SERVICE','1974-10-16')
+insert into customermaster values('C00003','pranav','madel','sunbha','ap',45525545,'meployee','1994-05-15')
+insert into customermaster values('C00004','murali','krishna','patel','sikkim',965234586,'sweeper','1989-12-16')
+insert into customermaster values('C00005','mohan','SUNDER','raman','gujarath',965685245,'SERVICE','1989-06-23')
+insert into customermaster values('C00006','ram','mohan','rajan','DELHI',9652345685,'SERVICE','1985-09-29')
+insert into customermaster values('C00007','yeswanth','kadimisetty','kadimisetty','DELHI',856457585,'SERVICE','2002-01-11')
+insert into customermaster values('C00008','rahul','neo','yamali','bhopal',9876532109,'SERVICE','2001-10-16')
