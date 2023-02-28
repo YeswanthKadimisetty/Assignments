@@ -1,0 +1,21 @@
+insert into customermaster values(
+'C00002','AVINASH','SUNDER','MINHA','DELHI',9876532109,'SERVICE','1974-10-16')
+
+--Display No of Customers belongs to each city.
+SELECT*FROM customermaster
+select CUSTOMER_CITY,COUNT(CUSTOMER_NUMBER) AS COUNT from customermaster group by CUSTOMER_CITY
+
+--Display all city names from customer tables without any duplicate values.
+ select distinct CUSTOMER_CITY as unique_city_names from customermaster
+
+--display number of customers from different occupation
+select occupation,count(CUSTOMER_NUMBER) as count from customermaster group by occupation
+
+--Display Customer Details with the Ascending Order based on FirstName
+select * from customermaster ORDER BY FIRSTNAME
+
+--Display the dat in descending order based on Occupation and the display the FirstName in Ascending of each Occupation
+select *   from customermaster ORDER BY occupation desc , FIRSTNAME ASC
+
+--Display Cusomters who has middlename as null
+select CUSTOMER_NUMBER from customermaster where middlename='null'
